@@ -22,7 +22,7 @@ feature_names = [
 ]
 
 # Define Streamlit app
-st.title('Fetal Health State Prediction')
+st.title('Fetal Health Status Prediction')
 st.write('Enter the fetal variables to predict the outcome')
 
 # Define the input fields
