@@ -37,6 +37,3 @@ if st.button('Predict'):
 
     prediction = model.predict(input_data)
     st.write(f'Predicted Fetal Health State: {prediction[0]}')
-
-if __name__ == '__main__':
-    st.run()
