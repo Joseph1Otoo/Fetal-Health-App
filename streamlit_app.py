@@ -21,7 +21,16 @@ feature_names = [
     'histogram_median', 'histogram_variance', 'histogram_tendency'
 ]
 
-# Define Streamlit app
+# Sidebar
+st.sidebar.title("Fetal Health Prediction App")
+st.sidebar.write("""
+This app uses a machine learning model to predict the health state of a fetus based on various features.
+Enter the values of the features in the main panel to get the prediction.
+""")
+st.sidebar.image("path_to_fetus_image.jpg", caption="Fetus Image 1", use_column_width=True)
+st.sidebar.image("path_to_fetus_image2.jpg", caption="Fetus Image 2", use_column_width=True)
+
+# Main panel
 st.title('Fetal Health Status Prediction')
 st.write('Enter the fetal variables to predict the outcome')
 
@@ -36,4 +45,4 @@ if st.button('Predict'):
     input_data = scaler.fit_transform(input_data)
 
     prediction = model.predict(input_data)
-    st.write(f'Predicted Fetal Health State: {prediction[0]}')
+    st.write(f'Predicted Fetal Health Status: {prediction[0]}')
