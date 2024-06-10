@@ -8,6 +8,9 @@ from sklearn.preprocessing import StandardScaler
 model = xgb.XGBClassifier()
 model.load_model('xgb_fetal_model.json')
 
+# Class names
+class_names = ['Normal', 'Suspect', 'Pathological']
+
 # Feature names
 feature_names = [
     'baseline value', 'accelerations', 'fetal_movement',
@@ -57,4 +60,5 @@ if st.button('Predict'):
     input_data = scaler.fit_transform(input_data)
 
     prediction = model.predict(input_data)
-    st.write(f'Predicted Fetal Health Status: {prediction[0]}')
+    predicted_class = class_names[int(prediction[0]) - 1]  # Assuming class labels are 1, 2, 3
+    st.write(f'Predicted Fetal Health State: {predicted_class}')
