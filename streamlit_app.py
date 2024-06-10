@@ -21,6 +21,18 @@ feature_names = [
     'histogram_median', 'histogram_variance', 'histogram_tendency'
 ]
 
+# Custom CSS to change background color
+st.markdown(
+    """
+    <style>
+    .main {
+        background-color: #f0f2f6; /* Change this color to whatever you like */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Sidebar
 st.sidebar.title("Fetal Health Prediction App")
 st.sidebar.write("""
