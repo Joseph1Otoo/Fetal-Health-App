@@ -24,7 +24,7 @@ feature_names = [
 # Sidebar
 st.sidebar.title("Fetal Health Prediction App")
 st.sidebar.write("""
-This app uses a machine learning model to predict the health state of a fetus based on various features.
+This app uses a machine learning model to predict the health status of a fetus based on various features.
 Enter the values of the features in the main panel to get the prediction.
 """)
 st.sidebar.image("ft1.jpeg", caption="Fetus Image 1", use_column_width=True)
