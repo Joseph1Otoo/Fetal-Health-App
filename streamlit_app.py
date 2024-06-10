@@ -26,7 +26,7 @@ st.markdown(
     """
     <style>
     .main {
-        background-color: #008000; /* Change this color to whatever you like */
+        background-color: #90EE90; /* Change this color to whatever you like */
     }
     </style>
     """,
