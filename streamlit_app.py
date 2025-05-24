@@ -42,8 +42,8 @@ st.sidebar.write("""
 This app uses a machine learning model to predict the health status of a fetus based on various features.
 Enter the values of the features in the main panel to get the prediction.
 """)
-st.sidebar.image("ft1.jpeg", caption="Fetus Image 1", use_column_width=True)
-st.sidebar.image("ft2.jpeg", caption="Fetus Image 2", use_column_width=True)
+st.sidebar.image("ft1.jpeg", caption="Fetus Image 1", use_container_width=True)
+st.sidebar.image("ft2.jpeg", caption="Fetus Image 2", use_container_width=True)
 
 # Main panel
 st.title('Fetal Health Status Prediction')
